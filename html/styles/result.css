@@ -1,0 +1,62 @@
+/* Summery Start */
+.summery {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .summery {
+    flex-direction: column;
+  }
+}
+
+.point {
+  width: 50%;
+  text-align: center;
+}
+
+.score {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.badge {
+  height: 300px;
+  padding: 1rem;
+}
+
+.badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Summery End */
+
+/* Analysis Start */
+.analysis {
+  margin: 2rem auto;
+}
+/* Analysis End */
+
+/* Question Start */
+.question {
+  background-color: var(--white);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: var(--borderRadF);
+}
+
+.qtitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+
+.qtitle span {
+  color: var(--active);
+}
+/* Question End */
