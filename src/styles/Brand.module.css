@@ -1,0 +1,20 @@
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.brand h3 {
+  color: var(--textColor);
+}
+
+@media (max-width: 600px) {
+  .brand h3 {
+    display: none;
+  }
+}

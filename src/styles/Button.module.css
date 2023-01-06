@@ -1,0 +1,25 @@
+.btn {
+  padding: 0.6rem 1rem;
+  background-color: var(--currect);
+  border: 0;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--borderRadE);
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--textColor);
+  color: var(--white);
+}

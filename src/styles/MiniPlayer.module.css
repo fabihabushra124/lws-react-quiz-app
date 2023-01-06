@@ -1,0 +1,104 @@
+.miniPlayer {
+  position: fixed;
+  width: 320px;
+  bottom: 100px;
+  right: 50px;
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: var(--borderRadF);
+}
+
+.miniPlayer img {
+  width: 100%;
+  object-fit: cover;
+  /* width: 300px;
+    aspect-ratio: 16 / 9; */
+  -webkit-animation: showImg 0.6s ease forwards;
+  -moz-animation: showImg 0.6s ease forwards;
+  -o-animation: showImg 0.6s ease forwards;
+  animation: showImg 0.6s ease forwards;
+}
+
+.miniPlayer p {
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--textColor);
+}
+
+@keyframes showImg {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.open {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: var(--white);
+  top: -10px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.close:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.floatingBtn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 80px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--textColor);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.floatingBtn .open {
+  display: block;
+  color: var(--currect);
+}
+
+.floatingBtn .close {
+  display: none;
+}
+
+.floatingBtn:hover {
+  background-color: var(--currect);
+}
+
+.floatingBtn:hover .open {
+  color: var(--textColor);
+}
+
+.floatingBtn img {
+  transform: scale(0);
+  display: none;
+}
+
+.floatingBtn p {
+  display: none;
+}

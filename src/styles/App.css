@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --bodyBg: #f0ebeb;
+  --textColor: #002333;
+  --lightBlue: #7089ad;
+  --currect: #00ff84;
+  --wrong: #ef9a9a;
+  --quesBg: #eddfdf;
+  --active: #5dbe5d;
+  --border: #dddcdc;
+  --white: #fff;
+  --borderRadF: 5px;
+  --borderRadE: 8px;
+  --transition: all 0.4s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--textColor);
+  background-color: var(--bodyBg);
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+ul {
+  list-style: none;
+}
+
+h4 {
+  color: var(--lightBlue);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* For Signup & Login */
+.column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 1023px) {
+  .column {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.error {
+  background-color: var(--wrong);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: var(--borderRadE);
+}

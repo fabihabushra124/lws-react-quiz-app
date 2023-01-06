@@ -42,12 +42,12 @@
 
 .correct {
   background-color: var(--currect) !important;
-  font-style: 600;
+  font-weight: 600;
 }
 
 .wrong {
   background-color: var(--wrong) !important;
-  font-style: 600;
+  font-weight: 600;
 }
 
 /* For Question Analysis */
@@ -106,7 +106,7 @@
 .rangeArea .tooltip {
   position: absolute;
   top: -70px;
-  left: calc(25% - 59px);
+  left: calc(20% - 59px);
   background-color: var(--textColor);
   color: var(--white);
   border-radius: var(--borderRadE);
@@ -136,7 +136,7 @@
 }
 
 .progress {
-  width: 25%;
+  width: 20%;
   height: 100%;
   background-color: var(--textColor);
   position: relative;

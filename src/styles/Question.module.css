@@ -1,0 +1,17 @@
+.question {
+  background-color: var(--white);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: var(--borderRadF);
+}
+
+.qtitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+
+.qtitle span {
+  color: var(--active);
+}

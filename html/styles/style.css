@@ -43,12 +43,6 @@ h4 {
   padding: 10px 0;
   border-bottom: 1px solid var(--border);
 }
-
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 /* Global End */
 
 /* Layout Start */
@@ -81,6 +75,12 @@ h4 {
 /* Navbar End */
 
 /* Brand Start */
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .brand img {
   height: 30px;
   margin-right: 10px;
@@ -101,6 +101,9 @@ h4 {
 .account {
   gap: 0.5rem;
   font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .account > span:last-child {

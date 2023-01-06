@@ -1,0 +1,11 @@
+.account {
+  gap: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account > span:last-child {
+  cursor: pointer;
+}
