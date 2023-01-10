@@ -21,8 +21,8 @@ function App() {
             <Route path='signup' element={<Signup />} />
           </Route>
           <Route path='/*' element={<PrivateOutlet />}>
-            <Route path='quiz' element={<Quiz />} />
-            <Route path='result' element={<Result />} />
+            <Route path='quiz/:id' element={<Quiz />} /> {/* To pass video id in URL */}
+            <Route path='result/:id' element={<Result />} />
           </Route>
         </Routes>
       </Layout>

@@ -41,10 +41,11 @@
 .rangeArea .tooltip {
   position: absolute;
   top: -70px;
-  left: calc(20% - 59px);
+  /* left: calc(20% - 59px); */
   background-color: var(--textColor);
   color: var(--white);
   border-radius: var(--borderRadE);
+  white-space: nowrap;
   padding: 0.77rem 1rem;
   font-size: 12px;
   font-weight: 600;
@@ -71,7 +72,6 @@
 }
 
 .progress {
-  width: 20%;
   height: 100%;
   background-color: var(--textColor);
   position: relative;

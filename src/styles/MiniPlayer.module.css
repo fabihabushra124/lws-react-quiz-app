@@ -6,13 +6,15 @@
   background-color: var(--white);
   padding: 10px;
   border-radius: var(--borderRadF);
+  overflow: hidden;
 }
 
-.miniPlayer img {
-  width: 100%;
-  object-fit: cover;
-  /* width: 300px;
-    aspect-ratio: 16 / 9; */
+.miniPlayer .player {
+  width: 100% !important;
+  height: 168px !important;
+  /* width: 300px !important; */
+  /* object-fit: cover; */
+  /* aspect-ratio: 16 / 9; */
   -webkit-animation: showImg 0.6s ease forwards;
   -moz-animation: showImg 0.6s ease forwards;
   -o-animation: showImg 0.6s ease forwards;
@@ -75,6 +77,10 @@
   background-color: var(--textColor);
   border-radius: 50%;
   cursor: pointer;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 .floatingBtn .open {
@@ -94,7 +100,7 @@
   color: var(--textColor);
 }
 
-.floatingBtn img {
+.floatingBtn .player {
   transform: scale(0);
   display: none;
 }
